@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   background: #070707;
+  font-family: "Rubik", sans-serif;
   overflow-x: hidden;
 }
 html {
@@ -17,6 +18,7 @@ html {
 }
 
 button {
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 1.1 rem;
   cursor: pointer;
