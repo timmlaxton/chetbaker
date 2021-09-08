@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+#logo{
+  font-family:"Rubik"
+}
+
 body {
   background: #070707;
   font-family: "Rubik", sans-serif;
