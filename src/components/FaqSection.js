@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
+import Toggle from "./Toggle";
 
 const FaqSection = () => {
   return (
@@ -8,72 +9,51 @@ const FaqSection = () => {
       <h2>
         Any Question <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How Do I Start</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
+      <Toggle>
+        <div className="question">
+          <h4>1</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Workin Hours</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>2</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Where We Are Based</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>3</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Payment Methods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>4</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>How Do I Start</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>5</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>How Do I Start</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, ab.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </Faq>
   );
 };

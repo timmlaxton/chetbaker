@@ -5,7 +5,7 @@ import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, photoAnim } from "../animation";
 
 const OurWork = () => {
   return (
@@ -14,21 +14,21 @@ const OurWork = () => {
         <h2>The Athlete</h2>
         <div className="line"></div>
         <Link to="/work/the-athlete">
-          <img src={athlete} alt="athlete" />
+          <motion.img variants={photoAnim} src={athlete} alt="athlete" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Racer</h2>
         <div className="line"></div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="racer" />
+          <motion.img variants={photoAnim} src={theracer} alt="racer" />
         </Link>
       </Movie>
       <Movie>
         <h2>Good Times</h2>
         <div className="line"></div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtime" />
+          <motion.img variants={photoAnim} src={goodtimes} alt="goodtime" />
         </Link>
       </Movie>
     </Work>
