@@ -17,6 +17,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Workin Hours</h4>
@@ -27,6 +28,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Where We Are Based</h4>
@@ -37,6 +39,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>Payment Methods</h4>
@@ -47,6 +50,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>How Do I Start</h4>
@@ -57,6 +61,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4>How Do I Start</h4>
@@ -67,6 +72,7 @@ const FaqSection = () => {
             Blanditiis, ab.
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
     </Faq>
   );
