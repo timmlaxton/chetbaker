@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -9,51 +10,47 @@ const FaqSection = () => {
       <h2>
         Any Question <span>FAQ</span>
       </h2>
-      <Toggle>
-        <div className="question">
-          <h4>1</h4>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              vitae.
+            </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>2</h4>
+        </Toggle>
+        <Toggle title="Daily Schedule">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, fugit!
+            </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>3</h4>
+        </Toggle>
+        <Toggle title="Where Do Film">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
+            <p>lorem10</p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>4</h4>
+        </Toggle>
+        <Toggle title="Payment Method">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
+            <p>lorem10</p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>5</h4>
+        </Toggle>
+        <Toggle title="Do You Only Do Filming">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              quod!
+            </p>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };

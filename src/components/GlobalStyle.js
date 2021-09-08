@@ -17,8 +17,11 @@ body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
 }
-html {
-  font-size: 75%;
+html{
+    @media (max-width: 1700px){
+        font-size: 75%;
+    }
+    
 }
 
 button {
