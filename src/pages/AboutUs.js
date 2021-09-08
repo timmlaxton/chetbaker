@@ -1,14 +1,14 @@
 import React from "react";
-import About from "../components/About";
-import Services from "../components/Services";
-import Faq from "../components/Faq";
+import AboutSection from "../components/AboutSection";
+import ServicesSection from "../components/ServicesSection";
+import FaqSection from "../components/FaqSection";
 
 const AboutUs = () => {
   return (
     <div>
-      <About />
-      <Services />
-      <Faq />
+      <AboutSection />
+      <ServicesSection />
+      <FaqSection />
     </div>
   );
 };
