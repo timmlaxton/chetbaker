@@ -39,6 +39,10 @@ button {
  
 }
 
+h1 {
+  color: #fff;
+}
+
 h2{
   color: #ccc;
     font-weight: lighter;
