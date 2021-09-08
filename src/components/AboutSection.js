@@ -4,40 +4,18 @@ import { About, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
-  const titleAnim = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 2 } },
-  };
-
-  const container = {
-    hidden: { x: 100 },
-    show: {
-      x: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        staggerChildren: 1,
-        when: "beforeChildren",
-      },
-    },
-  };
   return (
     <About>
       <Description>
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="title"
-        >
+        <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>Come with me</motion.h2>
+            <motion.h2>Come with me</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>to a world of </motion.h2>
+            <motion.h2>to a world of </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>
+            <motion.h2>
               {" "}
               <span>imagination</span>
             </motion.h2>
