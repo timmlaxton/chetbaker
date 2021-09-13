@@ -1,10 +1,11 @@
 import React from "react";
 import AboutUs from "./pages/AboutUs";
-import GlobalStyle from "./components/GlobalStyle";
+
 import Nav from "./components/Nav";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetails from "./pages/MovieDetails";
+import GlobalStyle from "./components/GlobalStyle";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 

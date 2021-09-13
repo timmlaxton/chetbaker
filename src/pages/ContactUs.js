@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
+import ScrollTop from "../components/ScrollTop";
+
 import styled from "styled-components";
 
 const ContactUs = () => {
+  <ScrollTop />;
   return (
     <ContactStyle
       exit="exit"
