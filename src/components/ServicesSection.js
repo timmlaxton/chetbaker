@@ -119,7 +119,7 @@ const Card = styled.div`
       margin-left: 1rem;
       background: white;
       color: white;
-      background: #000;
+      background: #070707;
       padding: 1rem;
     }
   }
