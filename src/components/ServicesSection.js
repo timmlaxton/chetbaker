@@ -7,8 +7,7 @@ import bootstrap from "../img/bootstrap.svg";
 import node from "../img/nodejs.svg";
 import mongo from "../img/mongo.svg";
 import redux from "../img/redux.svg";
-import home3 from "../img/home3.jpg";
-import { About, Description, Image } from "../styles";
+import { About, Description } from "../styles";
 import styled from "styled-components";
 import { useScroll } from "./useScroll";
 import { fade } from "../animation";
@@ -33,56 +32,48 @@ const ServicesSection = () => {
                 <img src={js} alt="" />
                 <h3>Javascript</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={react} alt="" />
                 <h3>React</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={redux} alt="" />
                 <h3>Redux</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={html} alt="" />
                 <h3>HTML</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={css} alt="" />
                 <h3>CSS</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={bootstrap} alt="" />
                 <h3>Bootstrap</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={node} alt="" />
                 <h3>NodeJS</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
                 <img src={mongo} alt="" />
                 <h3>MongoDB</h3>
               </div>
-              <p>Lorem ipsum dolor sit amet.</p>
             </Card>
           </Cards>
         </Description>
@@ -107,6 +98,7 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   @media (max-width: 1300px) {
     justify-content: center;
   }
@@ -114,6 +106,10 @@ const Cards = styled.div`
 const Card = styled.div`
   flex-basis: 20rem;
   text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0rem 4rem 0rem;
+
   .icon {
     display: flex;
     align-items: center;

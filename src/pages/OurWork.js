@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
+import audio from "../img/audioeverything-1.png";
+import chet from "../img/ChetBakerPlayer.jpg";
 import goodtimes from "../img/goodtimes-small.png";
 import { motion } from "framer-motion";
 import { pageAnimation, photoAnim } from "../animation";
@@ -16,17 +16,17 @@ const OurWork = () => {
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Movie>
-        <h2>The Athlete</h2>
+        <h2>Audio Everything</h2>
         <div className="line"></div>
-        <Link to="/work/the-athlete">
-          <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+        <Link to="/work/audio-everything">
+          <motion.img variants={photoAnim} src={audio} alt="athlete" />
         </Link>
       </Movie>
       <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
         <h2>The Racer</h2>
         <div className="line"></div>
         <Link to="/work/the-racer">
-          <motion.img variants={photoAnim} src={theracer} alt="racer" />
+          <motion.img variants={photoAnim} src={chet} alt="racer" />
         </Link>
       </Movie>
       <Movie

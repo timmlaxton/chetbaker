@@ -11,45 +11,31 @@ const FaqSection = () => {
   return (
     <Faq variants={fade} animate={controls} initial="hidden" ref={element}>
       <h2>
-        Any Question <span>FAQ</span>
+        <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start">
+        <Toggle title="I need a website, can you help?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Yes, happily.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              vitae.
+              I have over 2 years experience building SPA(single page sites) to
+              full stack sites. Please contact me and tell me what you need.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="Can you work with my exisiting team?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Inventore, fugit!
+              Yes, I'm happy to work with others to get what you need completed
             </p>
           </div>
         </Toggle>
-        <Toggle title="Where Do Film">
+        <Toggle title="What are your rates?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>lorem10</p>
-          </div>
-        </Toggle>
-        <Toggle title="Payment Method">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>lorem10</p>
-          </div>
-        </Toggle>
-        <Toggle title="Do You Only Do Filming">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>My rates depend on the size of the site</p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
-              quod!
+              To find out more, please get in contact and I will happily discuss
+              rates.{" "}
             </p>
           </div>
         </Toggle>

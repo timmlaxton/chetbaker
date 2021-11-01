@@ -1,17 +1,17 @@
-import athlete from "./img/athlete-small.png";
+import audio from "./img/audioeverything-1.png";
 import goodtimes from "./img/goodtimes-small.png";
 import theracer from "./img/theracer-small.png";
 import athlete2 from "./img/athlete2.png";
 import goodtimes2 from "./img/good-times2.jpg";
 import theracer2 from "./img/the-racer2.jpg";
 
-export const MovieState = () => {
+export const projects = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
+      title: "Audio Everything",
+      mainImg: audio,
       secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      url: "/work/audio-everything",
       awards: [
         {
           title: "Truly A masterpiece",

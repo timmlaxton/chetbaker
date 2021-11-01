@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { projects } from "../projects";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
 const MovieDetails = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
+  const [movies, setMovies] = useState(projects);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
