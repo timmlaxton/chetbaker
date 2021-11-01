@@ -1,146 +1,76 @@
 import React from "react";
-import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useForm, ValidationError } from "@formspree/react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { pageAnimation, titleAnim } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
-const Contact = () => {
-  const [state, handleSubmit] = useForm("xrgrwpbv");
-  if (state.succeeded) {
-    return (
-      <div>
-        <Emailresponseheader>Thanks for the email</Emailresponseheader>
-        <Emailresponse>
-          Thanks for gettting in touch, I will be in contact to discuss further.
-        </Emailresponse>
-      </div>
-    );
-  }
+import styled from "styled-components";
+
+const ContactUs = () => {
+  <ScrollTop />;
   return (
-    <Container>
-      <Row>
-        <Col>
-          <div className="contact-container">
-            <div className="contact-paragraph">
-              {" "}
-              <p>
-                {" "}
-                Sound engineer working in the live sector as a freelancer and
-                chief engineer at Bloc+, Glasgow. My aim is to move into the
-                sound design sector with a view to enhancing interactive audio
-                integration into theatre, dance and therapeutic applications.{" "}
-              </p>
-              <br />
-              <p> For Rates & Inquiries Fill In The Form Below </p>{" "}
-            </div>
-
-            <Row>
-              <Col md={4} className="mx-auto">
-                <Forms onSubmit={handleSubmit}>
-                  <Form.Group>
-                    <Form.Label htmlFor="name">Name</Form.Label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="text"
-                      placeholder="name*"
-                      name="name"
-                    />
-                  </Form.Group>
-
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
-
-                  <Form.Group>
-                    <Form.Label htmlFor="email">Email Address</Form.Label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      placeholder="email*"
-                      name="email"
-                    />
-                  </Form.Group>
-
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-
-                  <Form.Group>
-                    <Form.Label htmlFor="city">City</Form.Label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="city"
-                      placeholder="city*"
-                      name="city"
-                    />
-                  </Form.Group>
-
-                  <ValidationError
-                    prefix="City"
-                    field="city"
-                    errors={state.errors}
-                  />
-
-                  <Form.Group className="form-message">
-                    <Form.Label htmlFor="message">Message: {""}</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      className="form"
-                      id="message"
-                      rows="10"
-                      placeholder="message*"
-                      name="message"
-                    />
-                  </Form.Group>
-
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
-                  <Button
-                    variant="primary"
-                    type="submit"
-                    disabled={state.submitting}
-                  >
-                    Submit
-                  </Button>
-                </Forms>
-              </Col>
-            </Row>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <ContactStyle
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
+      <Title>
+        <Hide>
+          <motion.h2 variants={titleAnim}>Get In Touch</motion.h2>
+        </Hide>
+      </Title>
+      <div>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Get In Contact</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Get In Contact</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Get In Contact</h2>
+          </Social>
+        </Hide>
+      </div>
+    </ContactStyle>
   );
 };
 
-const Container = styled(motion.div)`
-  text-align: center;
+const ContactStyle = styled(motion.div)`
+  padding: 5rem 10rem;
+  color: #353535;
+  min-height: 90vh;
+`;
+
+const Title = styled.div`
+  margin-bottom: 4rem;
+  color: #000;
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
+`;
+
+const Circle = styled.div`
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: #353535;
+`;
+
+const Social = styled(motion.div)`
   display: flex;
-  width: 1200px;
-  margin: auto;
-`;
-
-const Forms = styled(motion.div)`
   align-items: center;
+  h2 {
+    margin: 2rem;
+  }
 `;
 
-const Emailresponseheader = styled(motion.div)`
-  text-align: center;
-  font-style: bold;
-`;
-const Emailresponse = styled(motion.div)`
-  font-size: large;
-  text-align: center;
-  font-style: bold;
-`;
-
-export default Contact;
+export default ContactUs;
