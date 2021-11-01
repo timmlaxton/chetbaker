@@ -8,6 +8,7 @@ import comics2 from "./img/comics-5.png";
 import comics3 from "./img/comics-3.png";
 import gutties from "./img/gutties-1.png";
 import gutties2 from "./img/gutties-2.png";
+import gutties3 from "./img/gutties-3.png";
 
 export const projects = () => {
   return [
@@ -93,6 +94,7 @@ export const projects = () => {
       mainImg: gutties,
       url: "/work/gutties",
       secondaryImg: gutties2,
+      thirdImg: gutties3,
       awards: [
         {
           title: "Truly A masterpiece",

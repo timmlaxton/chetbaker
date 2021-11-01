@@ -33,6 +33,9 @@ const MovieDetails = () => {
           <ImageDisplay>
             <img src={work.secondaryImg} alt="audio-2" />
           </ImageDisplay>
+          <ImageDisplay>
+            <img src={work.thirdImg} alt="audio-2" />
+          </ImageDisplay>
 
           <Awards>
             {work.awards.map((award) => (
