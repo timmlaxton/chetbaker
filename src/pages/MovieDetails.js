@@ -8,18 +8,18 @@ import { pageAnimation } from "../animation";
 const MovieDetails = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(projects);
-  const [movie, setMovie] = useState(null);
+  const [works, setWorks] = useState(projects);
+  const [work, setWork] = useState(null);
 
   useEffect(() => {
-    const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-    setMovie(currentMovie[0]);
-  }, [movies, url]);
-  console.log(setMovies);
+    const currentWork = works.filter((stateWork) => stateWork.url === url);
+    setWork(currentWork[0]);
+  }, [works, url]);
+  console.log(setWorks);
 
   return (
     <>
-      {movie && (
+      {work && (
         <Details
           exit="exit"
           variants={pageAnimation}
@@ -27,11 +27,17 @@ const MovieDetails = () => {
           animate="show"
         >
           <HeadLine>
-            <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="" />
+            <h2>{work.title}</h2>
+            <img src={work.mainImg} alt="" />
           </HeadLine>
+          <ImageDisplay>
+            <img src={work.secondaryImg} alt="audio-2" />
+          </ImageDisplay>
+          <ImageDisplay>
+            <img src={work.thirdImg} alt="audio-3" />
+          </ImageDisplay>
           <Awards>
-            {movie.awards.map((award) => (
+            {work.awards.map((award) => (
               <Award
                 title={award.title}
                 description={award.description}
@@ -39,9 +45,6 @@ const MovieDetails = () => {
               />
             ))}
           </Awards>
-          <ImageDisplay>
-            <img src={movie.secondaryImg} alt="movie" />
-          </ImageDisplay>
         </Details>
       )}
     </>

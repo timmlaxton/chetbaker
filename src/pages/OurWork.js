@@ -15,21 +15,26 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
-      <Movie>
+      <Project>
         <h2>Audio Everything</h2>
         <div className="line"></div>
         <Link to="/work/audio-everything">
-          <motion.img variants={photoAnim} src={audio} alt="athlete" />
+          <motion.img variants={photoAnim} src={audio} alt="audio" />
         </Link>
-      </Movie>
-      <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
+      </Project>
+      <Project
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        ref={element}
+      >
         <h2>The Racer</h2>
         <div className="line"></div>
         <Link to="/work/the-racer">
           <motion.img variants={photoAnim} src={chet} alt="racer" />
         </Link>
-      </Movie>
-      <Movie
+      </Project>
+      <Project
         variants={fade}
         animate={controls2}
         initial="hidden"
@@ -40,7 +45,7 @@ const OurWork = () => {
         <Link to="/work/good-times">
           <motion.img variants={photoAnim} src={goodtimes} alt="goodtime" />
         </Link>
-      </Movie>
+      </Project>
       <ScrollTop />
     </Work>
   );
@@ -58,7 +63,7 @@ const Work = styled(motion.div)`
   }
 `;
 
-const Movie = styled(motion.div)`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
