@@ -1,8 +1,12 @@
 import React from "react";
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
+import js from "../img/javascript.svg";
+import react from "../img/react.svg";
+import html from "../img/html5.svg";
+import css from "../img/css.svg";
+import bootstrap from "../img/bootstrap.svg";
+import node from "../img/nodejs.svg";
+import mongo from "../img/mongo.svg";
+import redux from "../img/redux.svg";
 import home3 from "../img/home3.jpg";
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
@@ -21,42 +25,70 @@ const ServicesSection = () => {
       >
         <Description>
           <h2>
-            High <span>quality</span> services
+            <span>Languages</span> and <span>Libraries</span>
           </h2>
           <Cards>
             <Card>
               <div className="icon">
-                <img src={clock} alt="" />
-                <h3>Efficent</h3>
+                <img src={js} alt="" />
+                <h3>Javascript</h3>
               </div>
               <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
-                <img src={diaphragm} alt="" />
-                <h3>Diaphram</h3>
+                <img src={react} alt="" />
+                <h3>React</h3>
               </div>
               <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
-                <img src={money} alt="" />
-                <h3>Affordable</h3>
+                <img src={redux} alt="" />
+                <h3>Redux</h3>
               </div>
               <p>Lorem ipsum dolor sit amet.</p>
             </Card>
             <Card>
               <div className="icon">
-                <img src={teamwork} alt="" />
-                <h3>Teamwork</h3>
+                <img src={html} alt="" />
+                <h3>HTML</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </Card>
+            <Card>
+              <div className="icon">
+                <img src={css} alt="" />
+                <h3>CSS</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </Card>
+            <Card>
+              <div className="icon">
+                <img src={bootstrap} alt="" />
+                <h3>Bootstrap</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </Card>
+            <Card>
+              <div className="icon">
+                <img src={node} alt="" />
+                <h3>NodeJS</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </Card>
+            <Card>
+              <div className="icon">
+                <img src={mongo} alt="" />
+                <h3>MongoDB</h3>
               </div>
               <p>Lorem ipsum dolor sit amet.</p>
             </Card>
           </Cards>
         </Description>
-        <Image>
+        {/* <Image>
           <img src={home3} alt="" />
-        </Image>
+        </Image> */}
       </Services>
     </div>
   );
@@ -65,6 +97,7 @@ const ServicesSection = () => {
 const Services = styled(About)`
   h2 {
     padding-bottom: 5rem;
+    text-align: center;
   }
   p {
     width: 70%;
@@ -80,13 +113,17 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
+  text-align: center;
   .icon {
     display: flex;
     align-items: center;
+    justify-content: center;
+
     h3 {
       margin-left: 1rem;
       background: white;
-      color: black;
+      color: white;
+      background: #000;
       padding: 1rem;
     }
   }
