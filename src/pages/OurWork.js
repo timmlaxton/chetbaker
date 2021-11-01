@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import audio from "../img/audioeverything-1.png";
-import chet from "../img/ChetBakerPlayer.jpg";
-import goodtimes from "../img/goodtimes-small.png";
+import comics from "../img/comics-1.png";
+import bellimages from "../img/bell-1.png";
+import gutties from "../img/gutties-1.png";
 import { motion } from "framer-motion";
 import { pageAnimation, photoAnim } from "../animation";
 import { fade } from "../animation";
@@ -13,6 +14,8 @@ import ScrollTop from "../components/ScrollTop";
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Project>
@@ -28,10 +31,10 @@ const OurWork = () => {
         initial="hidden"
         ref={element}
       >
-        <h2>The Racer</h2>
+        <h2>City Center Comics</h2>
         <div className="line"></div>
-        <Link to="/work/the-racer">
-          <motion.img variants={photoAnim} src={chet} alt="racer" />
+        <Link to="/work/comics">
+          <motion.img variants={photoAnim} src={comics} alt="comics" />
         </Link>
       </Project>
       <Project
@@ -40,12 +43,30 @@ const OurWork = () => {
         initial="hidden"
         ref={element2}
       >
-        <h2>Good Times</h2>
+        <h2>Bell Images</h2>
         <div className="line"></div>
-        <Link to="/work/good-times">
-          <motion.img variants={photoAnim} src={goodtimes} alt="goodtime" />
+        <Link to="/work/bell-images">
+          <motion.img variants={photoAnim} src={bellimages} alt="bell" />
         </Link>
       </Project>
+      <Project
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+        ref={element3}
+      >
+        <h2>Gutties</h2>
+        <div className="line"></div>
+        <Link to="/work/gutties">
+          <motion.img variants={photoAnim} src={gutties} alt="gutties" />
+        </Link>
+      </Project>
+      <Project
+        variants={fade}
+        animate={controls4}
+        initial="hidden"
+        ref={element4}
+      />
       <ScrollTop />
     </Work>
   );
