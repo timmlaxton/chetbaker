@@ -5,6 +5,7 @@ import audio from "../img/audioeverything-1.png";
 import comics from "../img/comics-1.png";
 import bellimages from "../img/bell-1.png";
 import gutties from "../img/gutties-1.png";
+import podcast from "../img/podcast-1.png";
 import { motion } from "framer-motion";
 import { pageAnimation, photoAnim } from "../animation";
 import { fade } from "../animation";
@@ -16,59 +17,80 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
   return (
-    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
-      <Project>
-        <h2>Audio Everything</h2>
-        <div className="line"></div>
-        <Link to="/work/audio-everything">
-          <motion.img variants={photoAnim} src={audio} alt="audio" />
-        </Link>
-      </Project>
-      <Project
-        variants={fade}
-        animate={controls}
+    <>
+      <Work
+        exit="exit"
+        variants={pageAnimation}
         initial="hidden"
-        ref={element}
+        animate="show"
       >
-        <h2>City Center Comics</h2>
-        <div className="line"></div>
-        <Link to="/work/comics">
-          <motion.img variants={photoAnim} src={comics} alt="comics" />
-        </Link>
-      </Project>
-      <Project
-        variants={fade}
-        animate={controls2}
-        initial="hidden"
-        ref={element2}
-      >
-        <h2>Bell Images</h2>
-        <div className="line"></div>
-        <Link to="/work/bell-images">
-          <motion.img variants={photoAnim} src={bellimages} alt="bell" />
-        </Link>
-      </Project>
-      <Project
-        variants={fade}
-        animate={controls3}
-        initial="hidden"
-        ref={element3}
-      >
-        <h2>Gutties</h2>
-        <div className="line"></div>
-        <Link to="/work/gutties">
-          <motion.img variants={photoAnim} src={gutties} alt="gutties" />
-        </Link>
-      </Project>
-      <Project
-        variants={fade}
-        animate={controls4}
-        initial="hidden"
-        ref={element4}
-      />
-      <ScrollTop />
-    </Work>
+        <Project>
+          <h2>Audio Everything</h2>
+          <div className="line"></div>
+          <Link to="/work/audio-everything">
+            <motion.img variants={photoAnim} src={audio} alt="audio" />
+          </Link>
+        </Project>
+        <Project
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+          ref={element}
+        >
+          <h2>City Center Comics</h2>
+          <div className="line"></div>
+          <Link to="/work/comics">
+            <motion.img variants={photoAnim} src={comics} alt="comics" />
+          </Link>
+        </Project>
+        <Project
+          variants={fade}
+          animate={controls2}
+          initial="hidden"
+          ref={element2}
+        >
+          <h2>Bell Images</h2>
+          <div className="line"></div>
+          <Link to="/work/bell-images">
+            <motion.img variants={photoAnim} src={bellimages} alt="bell" />
+          </Link>
+        </Project>
+        <Project
+          variants={fade}
+          animate={controls3}
+          initial="hidden"
+          ref={element3}
+        >
+          <h2>Gutties</h2>
+          <div className="line"></div>
+          <Link to="/work/gutties">
+            <motion.img variants={photoAnim} src={gutties} alt="gutties" />
+          </Link>
+        </Project>
+        <Project
+          variants={fade}
+          animate={controls4}
+          initial="hidden"
+          ref={element4}
+        >
+          <h2>Working Comics</h2>
+          <div className="line"></div>
+          <Link to="/work/podcast">
+            <motion.img variants={photoAnim} src={podcast} alt="podcast" />
+          </Link>
+        </Project>
+        <Project
+          variants={fade}
+          animate={controls5}
+          initial="hidden"
+          ref={element5}
+        />
+
+        <ScrollTop />
+      </Work>
+    </>
   );
 };
 

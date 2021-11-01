@@ -9,6 +9,9 @@ import comics3 from "./img/comics-3.png";
 import gutties from "./img/gutties-1.png";
 import gutties2 from "./img/gutties-2.png";
 import gutties3 from "./img/gutties-3.png";
+import podcast from "./img/podcast-1.png";
+import podcast2 from "./img/podcast-2.png";
+import podcast3 from "./img/podcast-3.png";
 
 export const projects = () => {
   return [
@@ -95,6 +98,30 @@ export const projects = () => {
       url: "/work/gutties",
       secondaryImg: gutties2,
       thirdImg: gutties3,
+      awards: [
+        {
+          title: "Truly A masterpiece",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Fresh look on a brutal sport.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "It’s okay lmao.",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "Podcast",
+      mainImg: podcast,
+      url: "/work/podcast",
+      secondaryImg: podcast2,
+      thirdImg: podcast3,
       awards: [
         {
           title: "Truly A masterpiece",
